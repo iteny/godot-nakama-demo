@@ -11,12 +11,14 @@ config_version=5
 [application]
 
 config/name="godot-nakama-demo"
+run/main_scene="uid://bxs4ut8dmfe21"
 config/features=PackedStringArray("4.4", "GL Compatibility")
 config/icon="res://icon.svg"
 
 [autoload]
 
 Nakama="*res://addons/com.heroiclabs.nakama/Nakama.gd"
+ServerConnection="*res://src/auto-load/ServerConnection.gd"
 
 [rendering]
 
