@@ -12,7 +12,8 @@ func _ready() -> void:
 	# 添加主菜单
 	var main_menu = preload("res://src/ui/MainMenu.tscn").instantiate()
 	ui.add_ui(main_menu)
-	
+	ui.set_ui_visibility(false)
+	ui.set_ui_visibility(true)
 	pass # Replace with function body.
 
 
@@ -20,23 +21,3 @@ func _ready() -> void:
 func _process(delta: float) -> void:
 	
 	pass
-## 创建UI系统
-#var ui = UICanvas.new()
-#add_child(ui)
-#
-## 添加主菜单
-#var main_menu = preload("res://ui/main_menu.tscn").instantiate()
-#ui.add_ui(main_menu)
-
-# 显示设置弹窗
-#func _on_settings_pressed():
-	#var settings = preload("res://ui/settings.tscn")
-	#ui.switch_ui(settings, UICanvas.UI_LAYER.POPUP, UICanvas.TRANSITION_TYPE.FADE)
-#
-## 显示提示
-#func _on_item_collected():
-	#ui.show_toast("金币+10!", 1.5)
-#
-## 返回主菜单
-#func _on_back_pressed():
-	#ui.back(UICanvas.TRANSITION_TYPE.SLIDE_RIGHT)
